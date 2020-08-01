@@ -1,0 +1,115 @@
+body{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Main-Container */
+#list-container::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+#list-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+#list-container::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+#list-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+header{
+    color: white;
+}
+  
+.main-container{
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+/* Input the Task styling */
+#input-container{
+    width: 90%;
+    border-radius: 5px;
+    background: lightgray;
+    padding: 10px;
+    margin:2% 0% 2% 2%;
+}
+
+#add-button{
+    width:5%;
+    background: lightgray;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+#add-button:hover{
+    cursor: pointer;
+}
+
+#input-container input{
+    width:90%;
+    border: none;
+    background: lightgray;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+/* List of Task */
+#list-container{
+    list-style: none;
+    font-size: 1.2rem;
+    overflow: scroll;
+    height:68%;
+    padding: 0;
+}
+
+#list-container li{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px dashed grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+label{ 
+    display:inline-block;
+    width: 100%;
+}
+
+input[type="checkbox"]:checked+label{
+    background:blue; 
+    color:white;
+}
+
+.del{
+    width: 10%;
+    height: 3%;
+    color: red;
+    font-weight: bolder;
+}
+
+.del:hover {
+    background-color:red;
+    color: white;
+}
+
+#list-container button{
+    border: none;
+    padding: 10px;
+    background: rgba(240, 5, 5, 0.301);
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#list-container button:hover{
+    background: red;
+}

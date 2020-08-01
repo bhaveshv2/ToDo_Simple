@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- linking the Raleway font familys -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <title>Todo List (Vanila JS)</title>
+</head>
+<body>
+    <header>
+        <h1>Task Manager ( Todo List )</h1>
+    </header>
+    <div class="main-container">
+        <div id="input-container">
+            <input type="text" placeholder="Type your task" id="task-input">
+            <button id="add-button" onclick="newTask()"><strong>+</strong></button>
+        </div>  
+        <hr>
+        <ul id="list-container">
+            <button onclick="deleteSelected()">Delete Selected</button>
+        </ul>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
